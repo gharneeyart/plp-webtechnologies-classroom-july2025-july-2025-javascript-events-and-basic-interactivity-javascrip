@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Events & Interactivity Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Events & Interactivity</h1>
+        <button id="toggle-mode-btn">Toggle Light/Dark Mode</button>
+    </header>
+
+    <section>
+        <h2>Counter Game</h2>
+        <div>
+            <button id="decrement-btn">-</button>
+            <span id="counter-value">0</span>
+            <button id="increment-btn">+</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>FAQ</h2>
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question">What is JavaScript?</button>
+                <div class="faq-answer">JavaScript is a programming language for the web.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What is an event?</button>
+                <div class="faq-answer">An event is an action that happens in the browser, like a click.</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact Form</h2>
+        <form id="contact-form" novalidate>
+            <div class="form">
+                <label>Name:</label>
+                <div class="field">
+                    <input type="text" id="name" name="name">
+                    <span class="error" id="name-error"></span>
+                </div>
+            </div>
+            <div class="form">
+                <label>Email:</label>
+                <div class="field">
+                    <input type="email" id="email" name="email">
+                    <span class="error" id="email-error"></span>
+                </div>
+            </div>
+            <div class="form">
+                <label>Password:</label>
+                <div class="field">
+                    <input type="password" id="password" name="password">
+                    <span class="error" id="password-error"></span>
+                </div>
+            </div>   
+            <button type="submit" class="btn">Submit</button>
+            <span class="success" id="form-success"></span>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
